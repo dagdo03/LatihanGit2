@@ -61,4 +61,8 @@ fun main(args: Array<String>) {
     println("Panjang sisi persegi adalah ${square.getSide()}")
     println("Keliling persegi dengan panjang sisi yaitu $side adalah ${square.perimeterSquareCalculate()}")
 
+    square.printHeaderSquare()
+    println("Panjang sisi persegi adalah ${square.getSide()}")
+    println("Keliling persegi dengan panjang sisi yaitu $side adalah ${square.perimeterSquareCalculate()}")
+
 }
