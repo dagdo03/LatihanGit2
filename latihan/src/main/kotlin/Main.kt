@@ -19,6 +19,14 @@ class Circle(private val radius: Double) {
         println("-------------------------------------")
     }
 }
+class Triangle(){
+    fun wideTriangle(height: Double, base: Double){
+        println("Wide is : ${(height * base)/2}")
+    }
+    fun circumferenceTriangle(a: Double, b: Double, c: Double){
+        println("Wide is : ${a + b + c}")
+    }
+}
 fun main(args: Array<String>) {
     val radius = 42.0
     val circle = Circle(radius)
@@ -26,4 +34,6 @@ fun main(args: Array<String>) {
     println("Jari-jari lingkaran adalah ${circle.getRadius()}")
     println("Luas lingkaran dengan jari-jari yaitu $radius adalah ${circle.areaCircleCalculate()}")
     println("Keliling lingkaran dengan jari-jari yaitu $radius adalah ${circle.circumferenceCircleCalculate()}")
+    Triangle().circumferenceTriangle(3.0, 4.0, 5.0)
+    Triangle().wideTriangle(4.0, 3.0)
 }
