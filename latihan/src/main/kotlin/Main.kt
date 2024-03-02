@@ -27,6 +27,12 @@ class Triangle(){
         println("Wide is : ${a + b + c}")
     }
 }
+
+class Square(){
+    fun wideSquare(long: Double){
+        println("Wide is : ${long * long}")
+    }
+}
 fun main(args: Array<String>) {
     val radius = 42.0
     val circle = Circle(radius)
@@ -36,4 +42,5 @@ fun main(args: Array<String>) {
     println("Keliling lingkaran dengan jari-jari yaitu $radius adalah ${circle.circumferenceCircleCalculate()}")
     Triangle().circumferenceTriangle(3.0, 4.0, 5.0)
     Triangle().wideTriangle(4.0, 3.0)
+    Square().wideSquare(5.0)
 }
